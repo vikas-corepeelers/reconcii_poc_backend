@@ -1,0 +1,58 @@
+spring:
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  datasource:
+    url: jdbc:mysql://subway-mysql-rds.cxsmau44s3bi.ap-south-1.rds.amazonaws.com:3306/reconcii
+    username: admin
+    password: Subway_rds_123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connectionTimeout: 300000
+      maximum-pool-size: 40
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: false
+        #use_sql_comments: true
+        format_sql: true
+#  data:
+#    mongodb:
+#      host: 152.141.19.174
+#      port: 27017
+#      username: mcd-application-client
+#      password: 3307324b05f5
+#      database: mcd
+#      authentication-database: mcd
+cpl:
+  s3:
+    client:
+      required: false
+logging:
+  level:
+    root: INFO
+    com:
+      cpl: INFO
+sftp:
+  root: /home/sftp
+  dotpay:
+    API_KEY: fdc01a72-5043-4d6a-b7b7-0b5d92138f81
+    API_SECRET: 9vfo3eRNIcY7Vc2F9zyQEU3raXT5GCv92f6xOr-6Vkk
+manualUpload:
+#  email: prateet.garg@corepeelers.com,ashwani.katyal@del.in.mcd.com,pankaj.bhatia@del.in.mcd.com,harsh.gupta@del.in.mcd.com
+  email: prateet.garg@corepeelers.com
+  header: DataUpload
+  template:
+    path: /home/sftp/templates/
+gateway:
+  internal:
+    url: http://152.141.19.173/
+
+scheduled:
+  pool:
+    size: 18
+temp:
+  mprpath: /root/tmp/mpr

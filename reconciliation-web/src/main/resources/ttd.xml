@@ -1,0 +1,63 @@
+<TLD businessDate="20230911" checkPoint="0" dataComplete="false" end="true" hasMoreContent="false" logVersion="1.0-20090415" productionStatus="online" storeId="3140006" swVersion="NP6.1.30.MR10QR1B21267">
+
+    <Node id="POS0001" nodeStatus="Online">
+        <Event RegId="211" Time="20230910230613" Type="DAY_OPEN"></Event>
+        <Event RegId="212" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="213" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="214" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="215" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="216" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="217" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="218" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="219" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="220" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="221" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="222" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="223" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="224" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="225" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="226" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="227" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="228" Time="20230910230613" Type="DAY_CLOSE"></Event>
+    </Node>
+    <Node id="POS0002" nodeStatus="Online">
+        <Event RegId="111" Time="20230910230613" Type="DAY_OPEN"></Event>
+        <Event RegId="112" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="113" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="114" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="115" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="116" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="117" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="118" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="119" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="120" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="121" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="122" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="123" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="124" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="125" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="126" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="127" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="128" Time="20230910230613" Type="DAY_CLOSE"></Event>
+    </Node>
+    <Node id="POS0003" nodeStatus="Online">
+        <Event RegId="311" Time="20230910230613" Type="DAY_OPEN"></Event>
+        <Event RegId="312" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="313" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="314" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="315" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="316" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="317" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="318" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="319" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="320" Time="20230910230613" Type="OPE_LOGIN"></Event>
+        <Event RegId="321" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="322" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="323" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="324" Time="20230910230613" Type="OPEN"></Event>
+        <Event RegId="325" Time="20230910230613" Type="CLOSE"></Event>
+        <Event RegId="326" Time="20230910230613" Type="SALE"></Event>
+        <Event RegId="327" Time="20230910230613" Type="OPE_LOGOUT"></Event>
+        <Event RegId="328" Time="20230910230613" Type="DAY_CLOSE"></Event>
+    </Node>
+</TLD>

@@ -1,0 +1,122 @@
+server:
+  port: 8083 #  HTTP port.
+  servlet:
+    context-path: /subway-service # the context path, defaults to '/'
+    application-display-name: SUBWAY-Reconciliation-Service # Display name of the application.
+spring:
+  config:
+    import: classpath:server.yml
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+
+# application.yml
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+#Parteners SFTP details
+sftp:
+  icici:
+    bankstatement:
+      root: MT940src
+      host: 203.189.92.142
+      user: CPLAZA_ici
+      password: Reco@cppl_1198xys
+      port: 4446
+##SMTP Details
+mail:
+  smtp:
+    auth: true
+    starttls:
+      enable: true
+    host: in.mailjet.com
+    port: 587
+    username: 40e52ed213761a0854a6bafe9171f022
+    password: 7d3429dd90384cd7af42127bcf3bb5f5
+    mail: IND-Reconciliations@ext.mcdonalds.com
+##STLD Event Details
+pos:
+  persistence:
+    enabled:
+      events:
+        - TRX_Sale
+        - TRX_Refund
+        - TRX_Waste
+        #- Ev_CancelSpecialTrx
+        #- TRX_DayOpen
+        #- TRX_DayClose
+        #- TRX_OperLogin
+        #- TRX_OperLogout
+        #- TRX_InitGTotal
+        #- Ev_POSShutDown
+        #- TRX_RegTransfer
+        #- TRX_Price_Changed
+        #- TRX_ModifyExchangeRate
+voucher:
+  hdfc:
+    upi:
+      bs:
+        narration: HDFC UPI Sale Received DT. %s
+        version: 111.010250
+      mpr:
+        narration: HDFC UPI Sale Received DT. %s
+        version: 112.060357
+      charges:
+        narration: HDFC UPI Chrg recd %s
+        version: 112.060357
+    card:
+      bs:
+        narration: HDFC Card Sale pyt recd on %s
+        version: 111.010250
+      mpr:
+        narration: HDFC Card Sale pyt recd on %s
+        version: 112.060256
+      charges:
+        narration: Charges on HDFC Card Sale pyt recd on %s
+        version: 522.08004
+  icici:
+    upi:
+      bs:
+        narration: ICIC UPI Sale  Recd. On  %s
+        version: 111.010259
+      mpr:
+        narration: ICIC UPI sale Recd dt. %s
+        version: 112.060421
+      refund:
+        narration: ICIC UPI Refund dt. %s
+        version: 112.060421
+    card:
+      bs:
+        narration: ICICI Card Sale dt. %s recd. on - %s
+        version: 111.010259
+      mpr:
+        narration: ICICI Card Sale dt %s -Recd on- %s
+        version: 112.060401
+      charges:
+        narration: ICICI Card Charges dt %s Pass on- %s
+        version: 522.08004
+  sbi:
+    card:
+      bs:
+        narration: SBI Card Sale pyt recd on %s
+        version: 111.010162
+      mpr:
+        narration: SBI Card Sale pyt recd in %s
+        version: 112.060261
+      charges:
+        narration: Chrg SBI CardSale pyt recd in %s
+        version: 522.08004
+  amex:
+    card:
+      bs:
+        narration: Amex Card Sale Pymt Recd - %s
+        version: 111.010186
+      mpr:
+        narration: Amex Card Sale Pymt Recd - %s
+        version: 112.060263
+      charges:
+        narration: Charges on Amex Card Sale Pymt recd - %s
+        version: 522.08004
