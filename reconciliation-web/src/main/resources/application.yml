@@ -1,5 +1,5 @@
 server:
-  port: 8083 #  HTTP port.
+  port: 8031 #  HTTP port.
   servlet:
     context-path: /subway-service # the context path, defaults to '/'
     application-display-name: SUBWAY-Reconciliation-Service # Display name of the application.
@@ -9,7 +9,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   profiles:
-    active: dev
+    active: stage
 
 # application.yml
   servlet:

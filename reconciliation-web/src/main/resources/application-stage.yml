@@ -3,9 +3,9 @@ spring:
     serialization:
       FAIL_ON_EMPTY_BEANS: false
   datasource:
-    url: jdbc:mysql://coreco-mysql.cpzxmgfkrh6g.ap-south-1.rds.amazonaws.com:3306/reconcii
-    username: reconcii-application-client
-    password: reconcii8a780c6d
+    url: jdbc:mysql://coreco-mysql.cpzxmgfkrh6g.ap-south-1.rds.amazonaws.com:3306/poc_reconcii
+    username: admin
+    password: One4the$#
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       connection-timeout: 300000
